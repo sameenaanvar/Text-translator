@@ -7,7 +7,7 @@ function Translator() {
   const [selectedLang, setSelectedLang] = useState("hi");
   const [translatedText, setTranslatedText] = useState("");
 
-  // 🔵 FETCH LANGUAGE LIST
+  //  FETCH LANGUAGE LIST
   const fetchLanguages = useCallback(async () => {
     try {
       const res = await axios.get(
@@ -61,7 +61,7 @@ function Translator() {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="bg-white shadow-lg p-6 rounded-xl w-full max-w-xl">
         <h1 className="text-2xl font-bold text-blue-600 text-center mb-4">
-          🌐 Text Transilator
+           Text Transilator
         </h1>
 
         {/* INPUT */}
